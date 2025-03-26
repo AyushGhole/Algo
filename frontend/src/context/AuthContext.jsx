@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
 
     if (token) {
       axios
-        .get("http://localhost:5000/api/auth/user", {
+        .get("https://algo-g8vo.onrender.com/api/auth/user", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => setUser(res.data))
