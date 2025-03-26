@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://algo-g8vo.onrender.com/api/auth/register", {
         name,
         email,
         password,
