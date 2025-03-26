@@ -15,7 +15,7 @@ const Navbar = ({ user }) => {
   const handleDeleteAccount = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete("http://localhost:5000/api/auth/delete", {
+      await axios.delete("https://algo-g8vo.onrender.com/api/auth/delete", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
